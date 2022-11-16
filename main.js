@@ -3,17 +3,16 @@ const closeMenu = document.getElementById("closeMenuImg");
 const respMenu = document.getElementById("responsiveMenu");
 
 
-function toggle() {
+hamMenu.addEventListener('click', ()=> {
     respMenu.style.display = "flex";
-}
-
-function close1() {
+});
+closeMenu.addEventListener('click', ()=> {
     respMenu.style.display = "none";
-}
+});
+respMenu.addEventListener('click', ()=> {
+    respMenu.style.display = "none";
+});
 
-hamMenu.addEventListener('click', toggle);
-closeMenu.addEventListener('click', close1);
-respMenu.addEventListener('click', close1);
 
 
 
