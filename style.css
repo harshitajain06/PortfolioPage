@@ -11,12 +11,13 @@
 
   .menu {
     padding: 0;
-    margin-top: 0px;
-    top: 0px;
+    margin-top: 0;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
   .links {
     text-decoration: none;
     list-style: none;
@@ -44,19 +45,25 @@
   .startbtn {
     padding: 10px;
     display: flex;
+
     /* top: -9vw; */
     box-sizing: border-box;
+
     /* width: 20vw; */
+
     /* height: 5vw; */
     font-family: 'Poppins', sans-serif;
+
     /* left: 16px; */
     color: aliceblue;
     background: #1a2236;
+
     /* margin-top: 10vw; */
     position: relative;
     font-size: 1.5vw;
     justify-self: flex-start;
   }
+
   .startbtn:hover {
     background-color: aliceblue;
     color: #1a2236;
@@ -64,7 +71,6 @@
 
   .profileName {
     margin: 0;
-
     font-family: 'Playfair Display', serif;
     font-weight: 400;
     font-size: 8vw;
@@ -318,6 +324,7 @@
     gap: 5%;
     white-space: nowrap;
   }
+
   .skills {
     position: relative;
     background-color: #febf52;
@@ -370,7 +377,8 @@
   }
 
   .contact {
-    background-image: url('./images/image-geometry_6.svg'),
+    background-image:
+      url('./images/image-geometry_6.svg'),
       url('./images/image-geometry_7.svg');
     background-repeat: no-repeat, no-repeat;
     background-position: top left, bottom right;
@@ -482,7 +490,6 @@
     width: 100%;
     background-color: #1a2236;
     display: flex;
-
     justify-content: space-around;
   }
 
@@ -566,8 +573,19 @@
     top: 0;
     justify-content: center;
     align-items: center;
-    text-align: center;
     flex-direction: column;
+  }
+
+  .project-ins ul {
+    display: flex;
+    justify-content: start;
+    padding: 0;
+    margin-left: 16px;
+    gap: 16px;
+    margin-top: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10.3334px;
+    font-weight: 300;
   }
 
   #responsiveMenu ul,
@@ -578,6 +596,17 @@
     list-style: none;
     color: #000;
     font-family: 'Poppins', sans-serif;
+  }
+
+  .socials li {
+    list-style: none;
+  }
+
+  .project-ins li {
+    background-color: #98dede;
+    list-style: none;
+    padding: 6px 10px;
+    text-align: center;
   }
 
   #responsiveMenu li {
@@ -617,15 +646,12 @@
     display: none;
   }
 
-  .socials li {
-    list-style: none;
-  }
-
   .image_geometry_1 {
     height: 74px;
     left: 0;
     top: 0;
   }
+
   nav {
     display: flex;
     justify-content: flex-end;
@@ -639,10 +665,6 @@
     background-repeat: no-repeat;
     background-position: top left;
     background-size: contain;
-  }
-
-  .pr-img1 {
-    display: none;
   }
 
   .square-shape img {
@@ -685,7 +707,6 @@
 
   .intro {
     margin: 32px 0;
-
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -753,29 +774,9 @@
     color: #fff;
   }
 
-  .project-ins ul {
-    display: flex;
-    justify-content: start;
-    padding: 0;
-    margin-left: 16px;
-    gap: 16px;
-    margin-top: 0;
-    font-family: 'Poppins', sans-serif;
-    font-size: 10.3334px;
-    font-weight: 300;
-  }
-
-  .project-ins li {
-    background-color: #98dede;
-    list-style: none;
-    padding: 6px 10px;
-    text-align: center;
-  }
-
   .project-ins button {
     display: flex;
     align-items: center;
-
     height: 44px;
     margin-top: 20px;
     margin-left: 17px;
@@ -855,7 +856,6 @@
   .languages {
     position: relative;
     width: 100%;
-
     background-color: #1c528a;
   }
 
@@ -896,14 +896,12 @@
   .frameworks {
     position: relative;
     width: 100%;
-
     background-color: #e2505c;
   }
 
   .skills {
     position: relative;
     width: 100%;
-
     background-color: #febf52;
   }
 
@@ -1016,21 +1014,26 @@
     padding: 10px;
     display: flex;
     text-align: center;
-
     width: 100%;
+
     /* top: -9vw; */
     box-sizing: border-box;
+
     /* width: 20vw; */
+
     /* height: 5vw; */
     font-family: 'Poppins', sans-serif;
+
     /* left: 16px; */
     color: aliceblue;
     background: #1a2236;
+
     /* margin-top: 10vw; */
     position: relative;
     font-size: 5vw;
     justify-content: center;
   }
+
   .form-button:hover {
     background-color: aliceblue;
     color: #1a2236;
