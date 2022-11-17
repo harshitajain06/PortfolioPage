@@ -12,6 +12,9 @@
 
 <body>
 
+    <div id="popup"></div>
+
+    <section>
     <header class="header header_desktop">
 
         <nav><img id="hamMenuImg" class="ic_menu" src="images/ic_menu.png" alt="geometry menu" /></nav>
@@ -27,6 +30,7 @@
         </div>
     </header>
 
+
     <ul class="menu">
         <li class="links"><a href="#hello">Hello</a></li>
         <li class="links"><a href="#portfolio">Portfolio</a></li>
@@ -34,11 +38,11 @@
         <li class="links"><a href="#contact">Contact</a></li>
     </ul>
 
+</section>
 
 
-
-    <section class="headline">
-        <div class="heroWrapper">
+    <section class="headline" id="hello">
+        <div class="heroWrapper" >
             <div class="mb-headline">
                 <h1 class="profileName">Harshita <br />Jain</h1>
 
@@ -51,10 +55,11 @@
                 <img src="./images/image-geometry_11.svg" alt="">
             </div>
         </div>
+        <img class="geometry" src="images/image_geometry_2.png" alt="geometry" />
     </section>
-    <img class="geometry" src="images/image_geometry_2.png" alt="geometry" />
+    
 
-    <section>
+    <section id="portfolio">
         <div class="row1">
             <div class="project-heading">
                 <h2 class="pro">
@@ -73,7 +78,7 @@
                         <li>JavaScript</li>
                     </ul>
                     <a class="project-btn" href="#">
-                        <button type="button">
+                        <button data-id="prj1" class="see-project" type="button">
                             <span>See this project</span>
                             <img class="pr-button-img" src="images/Union.png" alt="geometry Union">
                         </button>
@@ -96,8 +101,8 @@
                         <li>JavaScript</li>
                     </ul>
                     <a class="project-btn" href="#">
-                        <button type="button">
-                            <span>See this project</span>
+                        <button data-id="prj2" class="see-project" type="button">
+                            <span >See this project</span>
                             <img class="pr-button-img" src="images/Union.png" alt="geometry Union">
                         </button>
                     </a>
@@ -121,7 +126,7 @@
                         <li>JavaScript</li>
                     </ul>
                     <a class="project-btn" href="#">
-                        <button type="button">
+                        <button data-id="prj3" class="see-project" type="button">
                             <span>See this project</span>
                             <img class="pr-button-img" src="images/Union.png" alt="geometry Union">
                         </button>
@@ -142,7 +147,7 @@
                         <li>JavaScript</li>
                     </ul>
                     <a class="project-btn" href="#">
-                        <button type="button">
+                        <button data-id="prj4" class="see-project" type="button">
                             <span>See this project</span>
                             <img class="pr-button-img" src="images/Union.png" alt="geometry Union">
                         </button>
@@ -168,7 +173,7 @@
                             <li>JavaScript</li>
                         </ul>
                         <a class="project-btn" href="#">
-                            <button type="button">
+                            <button data-id="prj5" class="see-project" type="button">
                                 <span>See this project</span>
                                 <img class="pr-button-img" src="images/Union.png" alt="geometry Union">
                             </button>
@@ -204,7 +209,7 @@
                             <li>JavaScript</li>
                         </ul>
                         <a class="project-btn" href="#">
-                            <button type="button">
+                            <button data-id="prj6" class="see-project" type="button">
                                 <span>See this project</span>
                                 <img class="pr-button-img" src="images/Union.png" alt="geometry Union">
                             </button>
@@ -219,7 +224,7 @@
     </section>
 
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="about1">
             <div class="languages">
                 <h4 class="set-h">Languages</h4>
@@ -278,11 +283,11 @@
         <div class="contact-wrapper">
             <h2>Get Started</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. </p>
-            <form action="https://formspree.io/f/xeqdpkgq" method="POST">
+            <form id="form" action="https://formspree.io/f/xeqdpkgq" method="POST" >
                 <div class="form-row-1">
                     <div class="form-border">
                         <label for="name">Your Name</label>
-                        <input class="input" maxlength="30" type="text" name="name" id="name" placeholder="Enter Your Name Here..." required>
+                        <input class="input" maxlength="30" type="text" name="name" id="name1" placeholder="Enter Your Name Here..." required>
                     </div>
                     <div class="form-border">
                         <label for="email">Your Email</label>
@@ -291,6 +296,7 @@
                 </div>
                 <textarea class="textarea" name="textarea" id="text-area" maxlength="500" placeholder="Write Your Message Here..." cols="30" rows="6" required></textarea>
                 <br/>
+                <div id="errMsg"></div>
                 <button class="form-button" type="submit">Start Collaboration</button>
             </form>
         </div>
