@@ -1,97 +1,91 @@
-
-var hide = document.querySelectorAll('section')
+const hide = document.querySelectorAll('section');
 document.querySelector('.see-project').addEventListener('click', () => {
-    hide.forEach((i) => i.classList.toggle('active'));
-    
-  });
-
-
+  hide.forEach((i) => i.classList.toggle('active'));
+});
 
 const hamMenu = document.getElementById('hamMenuImg');
 const closeMenu = document.getElementById('closeMenuImg');
 const respMenu = document.getElementById('responsiveMenu');
 
-hamMenu.addEventListener('click', ()=> {
-    respMenu.style.display = 'flex';
-  });
-closeMenu.addEventListener('click', ()=> {
-    respMenu.style.display = 'none';
-  });
-respMenu.addEventListener('click', ()=> {
-    respMenu.style.display = 'none';
-  });
+hamMenu.addEventListener('click', () => {
+  respMenu.style.display = 'flex';
+});
+closeMenu.addEventListener('click', () => {
+  respMenu.style.display = 'none';
+});
+respMenu.addEventListener('click', () => {
+  respMenu.style.display = 'none';
+});
 
-  // **************Popup*******************
-  const projects = [
-    {
-      title: 'Project name goes here',
-      img: './images/Group 105.svg',
-      imgAlt: 'First img',
-      tech: ['HTML/CSS', 'Ruby on Rails', 'Java'],
-      des: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.', ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'],
-      git: ['#', 'See Github'],
-      demo: ['#', 'See Demo'],
-    },
-    {
-      title: 'Project name goes here',
-      img: './images/Rectangle 21 (1).svg',
-      tech: ['HTML/CSS', 'Ruby on Rails', 'Java'],
-      des: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.', ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'],
-      git: ['#', 'See Github'],
-      demo: ['#', 'See Demo'],
-    },
-    {
-      title: 'Project name goes here',
-      img: './images/Rectangle 21 (5).svg',
-      tech: ['HTML/CSS', 'Ruby on Rails', 'Java'],
-      des: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.', ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'],
-      git: ['#', 'See Github'],
-      demo: ['#', 'See Demo'],
-    },
-    {
-      title: 'Project name goes here',
-      img: './images/Rectangle 21 (2).svg',
-      tech: ['HTML/CSS', 'Ruby on Rails', 'Java'],
-      des: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.', ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'],
-      git: ['#', 'See Github'],
-      demo: ['#', 'See Demo'],
-    },
-    {
-      title: 'Project name goes here',
-      img: './images/Rectangle 26.svg',
-      tech: ['HTML/CSS', 'Ruby on Rails', 'Java'],
-      des: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.', ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'],
-      git: ['#', 'See Github'],
-      demo: ['#', 'See Demo'],
-    },
-    {
-      title: 'Project name goes here',
-      img: './images/Rectangle 21 (3).svg',
-      imgAlt: '#',
-      tech: ['HTML/CSS', 'Ruby on Rails', 'Java'],
-      des: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.', ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'],
-      git: ['#', 'See Github'],
-      demo: ['#', 'See Demo'],
-    },
-  ];
+// **************Popup*******************
+const projects = [
+  {
+    title: 'Project name goes here',
+    img: './images/Group 105.svg',
+    imgAlt: 'First img',
+    tech: ['HTML/CSS', 'Ruby on Rails', 'Java'],
+    des: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.', ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'],
+    git: ['#', 'See Github'],
+    demo: ['#', 'See Demo'],
+  },
+  {
+    title: 'Project name goes here',
+    img: './images/Rectangle 21 (1).svg',
+    tech: ['HTML/CSS', 'Ruby on Rails', 'Java'],
+    des: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.', ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'],
+    git: ['#', 'See Github'],
+    demo: ['#', 'See Demo'],
+  },
+  {
+    title: 'Project name goes here',
+    img: './images/Rectangle 21 (5).svg',
+    tech: ['HTML/CSS', 'Ruby on Rails', 'Java'],
+    des: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.', ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'],
+    git: ['#', 'See Github'],
+    demo: ['#', 'See Demo'],
+  },
+  {
+    title: 'Project name goes here',
+    img: './images/Rectangle 21 (2).svg',
+    tech: ['HTML/CSS', 'Ruby on Rails', 'Java'],
+    des: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.', ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'],
+    git: ['#', 'See Github'],
+    demo: ['#', 'See Demo'],
+  },
+  {
+    title: 'Project name goes here',
+    img: './images/Rectangle 26.svg',
+    tech: ['HTML/CSS', 'Ruby on Rails', 'Java'],
+    des: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.', ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'],
+    git: ['#', 'See Github'],
+    demo: ['#', 'See Demo'],
+  },
+  {
+    title: 'Project name goes here',
+    img: './images/Rectangle 21 (3).svg',
+    imgAlt: '#',
+    tech: ['HTML/CSS', 'Ruby on Rails', 'Java'],
+    des: ['Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.', ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.'],
+    git: ['#', 'See Github'],
+    demo: ['#', 'See Demo'],
+  },
+];
 
-  const body = document.getElementById('popup');
-//const section = document.createElement('section');
-//body.appendChild(section);
-//section.innerHTML = ``;
-  
+const body = document.getElementById('popup');
+// const section = document.createElement('section');
+// body.appendChild(section);
+// section.innerHTML = ``;
+
 const open = document.querySelectorAll('.see-project');
 open.forEach((item) => {
-    item.addEventListener('click', (e)=>{
+  item.addEventListener('click', (e) => {
     const popup = document.createElement('section');
     const store = e.currentTarget.dataset;
-     console.log(store.id);
-     var st = store.id;
-     let i = 0;
-      st1 =st.charAt(3)
-      i=st1;
-      console.log(st1);
-  
+    const st = store.id;
+    let i = 0;
+    const st1 = st.charAt(3);
+    i = st1;
+
     popup.innerHTML = `
     <div class="desk-popup">
     <h2>${projects[i].title}</h2>
@@ -118,21 +112,14 @@ open.forEach((item) => {
     `;
     body.appendChild(popup);
 
-
-    var show = document.querySelectorAll('section')
-  document.querySelector('#popupBtnCross').addEventListener('click', () => {
+    const show = document.querySelectorAll('section');
+    document.querySelector('#popupBtnCross').addEventListener('click', () => {
       show.forEach((i) => i.classList.toggle('show'));
-      
     });
 
-   
-
     const close = document.getElementById('popupBtnCross');
-    close.addEventListener('click', ()=>{
-        body.removeChild(popup);
-    })
-
-})
-
-})
-
+    close.addEventListener('click', () => {
+      body.removeChild(popup);
+    });
+  });
+});
