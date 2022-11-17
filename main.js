@@ -102,7 +102,7 @@ open.forEach((item) => {
     
     <div class="btn-div">
         <a href="${projects[i].demo[0]}"><button class="button1"><span>${projects[i].demo[1]}</span><img src="./images/ic_link.svg" alt="openlink"></button></a>
-        <a href="${projects[i].git[1]}"><button class="button2"><span>${projects[i].git[1]}</span><img src="./images/ic_github_white.svg" alt="gitlink"></button></a>
+        <a href="${projects[i].git[1]}"><button class="button2"><span>${projects[i].git[1]}</span><img id="git" src="./images/ic_github_white (1).svg" alt="gitlink"></button></a>
     </div>
     <div class="btn-nxt-rev">
         <a href="${projects[i].demo[0]}"><button class="button3"><img src="./images/Union (2).svg" alt="Previous Projects"><span>Previous Projects</span></button></a>
