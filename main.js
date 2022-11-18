@@ -151,7 +151,7 @@ form.addEventListener('submit', (e) => {
   const email = input.value.trim();
   const regex = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
   if (!regex.test(email)) {
-    errorMsg.textContent = 'Email should be in lower case only';
+    errorMsg.textContent = 'Email should be in Lower Case only';
   } else {
     form.submit();
   }
