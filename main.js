@@ -124,3 +124,18 @@ open.forEach((item) => {
     });
   });
 });
+
+const form = document.getElementById('form');
+const input = document.getElementById('email');
+const errorMsg = document.getElementById('errMsg');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const email = input.value.trim();
+  const regex = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/;
+  if (!regex.test(email)) {
+    errorMsg.textContent = 'Email Should Be In Lower Case Only';
+  } else {
+    form.submit();
+  }
+});
