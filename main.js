@@ -1,4 +1,4 @@
-var hide = document.querySelectorAll('section');
+const hide = document.querySelectorAll('section');
 document.querySelector('.see-project').addEventListener('click', () => {
   hide.forEach((i) => i.classList.toggle('active'));
 });
@@ -90,21 +90,19 @@ const projects = [
 ];
 
 const body = document.getElementById('popup');
-//const section = document.createElement('section');
-//body.appendChild(section);
-//section.innerHTML = ``;
+// const section = document.createElement('section');
+// body.appendChild(section);
+// section.innerHTML = ``;
 
 const open = document.querySelectorAll('.see-project');
 open.forEach((item) => {
   item.addEventListener('click', (e) => {
     const popup = document.createElement('section');
     const store = e.currentTarget.dataset;
-    console.log(store.id);
-    var str = store.id;
+    const str = store.id;
     let i = 0;
-    st1 = str.charAt(3);
+    const st1 = str.charAt(3);
     i = st1;
-    console.log(st1);
 
     popup.innerHTML = `
     <div class="desk-popup">
@@ -132,7 +130,7 @@ open.forEach((item) => {
     `;
     body.appendChild(popup);
 
-    var show = document.querySelectorAll('section');
+    const show = document.querySelectorAll('section');
     document.querySelector('#popupBtnCross').addEventListener('click', () => {
       show.forEach((i) => i.classList.toggle('show'));
     });
