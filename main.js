@@ -99,9 +99,10 @@ open.forEach((item) => {
   item.addEventListener('click', (e) => {
     const popup = document.createElement('section');
     const store = e.currentTarget.dataset;
-    const str = store.id;
+
+    const st = store.id;
     let i = 0;
-    const st1 = str.charAt(3);
+    const st1 = st.charAt(3);
     i = st1;
 
     popup.innerHTML = `
@@ -119,7 +120,7 @@ open.forEach((item) => {
     
     <div class="btn-div">
         <a href="${projects[i].demo[0]}"><button class="button1"><span>${projects[i].demo[1]}</span><img src="./images/ic_link.svg" alt="openlink"></button></a>
-        <a href="${projects[i].git[1]}"><button class="button2"><span>${projects[i].git[1]}</span><img src="./images/ic_github_white.svg" alt="gitlink"></button></a>
+        <a href="${projects[i].git[1]}"><button class="button2"><span>${projects[i].git[1]}</span><img id="git" src="./images/ic_github_white (1).svg" alt="gitlink"></button></a>
     </div>
     <div class="btn-nxt-rev">
         <a href="${projects[i].demo[0]}"><button class="button3"><img src="./images/Union (2).svg" alt="Previous Projects"><span>Previous Projects</span></button></a>
