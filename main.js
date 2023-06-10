@@ -20,72 +20,70 @@ respMenu.addEventListener('click', () => {
 // **************Popup*******************
 const projects = [
   {
-    title: 'Project name goes here',
-    img: './images/Group 105.svg',
+    title: 'Table Reservation',
+    img: './images/book table.png',
     imgAlt: 'First img',
-    tech: ['HTML/CSS', 'Ruby on Rails', 'Java'],
+    tech: ['HTML/CSS', 'Ruby on Rails', 'React'],
     des: [
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.',
-      ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+      'Restaurant Table Reservation is an app that allows user to register, add a table, reserve a table and delete the table or the reservation. The backend is built using Ruby On Rails and communicates with the frontend of the app to provide a seamless user experience.'
     ],
-    git: ['#', 'See Github'],
-    demo: ['#', 'See Demo'],
+    git: ['https://github.com/harshitajain06/Book-reservation-Front_End', 'See Github'],
+    demo: ['https://book-reservation-h17l.onrender.com/', 'See Demo'],
   },
   {
-    title: 'Project name goes here',
-    img: './images/Rectangle 21 (1).svg',
-    tech: ['HTML/CSS', 'Ruby on Rails', 'Java'],
+    title: 'Fashion Conference',
+    img: './images/fashion.png',
+    imgAlt: 'First img',
+    tech: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
     des: [
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.',
-      ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+      'This is a Fashion World Conference website in first Capstone project during Microverse Full Stack developer course. I used HTML, CSS and JavaScript in this project.'
     ],
-    git: ['#', 'See Github'],
-    demo: ['#', 'See Demo'],
+    git: ['https://github.com/harshitajain06/Capstone-1.git', 'See Github'],
+    demo: ['https://harshitajain06.github.io/Capstone-1/', 'See Demo'],
   },
   {
-    title: 'Project name goes here',
-    img: './images/Rectangle 21 (5).svg',
-    tech: ['HTML/CSS', 'Ruby on Rails', 'Java'],
+    title: 'Math Magicians',
+    img: './images/math.png',
+    imgAlt: 'First img',
+    tech: ['HTML/CSS', 'Tailwind', 'React'],
     des: [
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.',
-      ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+      'It is a Calculator App made with React.'
     ],
-    git: ['#', 'See Github'],
-    demo: ['#', 'See Demo'],
+    git: ['https://github.com/harshitajain06/Math_Magicians', 'See Github'],
+    demo: ['https://math-magician-nttj.onrender.com/', 'See Demo'],
   },
   {
-    title: 'Project name goes here',
-    img: './images/Rectangle 21 (2).svg',
-    tech: ['HTML/CSS', 'Ruby on Rails', 'Java'],
+    title: 'Meals Menu',
+    img: './images/meals menu.png',
+    imgAlt: 'First img',
+    tech: ['HTML/CSS', 'Tailwind', 'React'],
     des: [
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.',
-      ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+      'Meals-Menu is a web app that showcases the the meals available in a restaurant with great number of details about those meals including the categories, Ingridients and the recipes for them.'
     ],
-    git: ['#', 'See Github'],
-    demo: ['#', 'See Demo'],
+    git: ['https://github.com/harshitajain06/Meals-Menu', 'See Github'],
+    demo: ['https://harshitajain06.github.io/Meals-Menu/dist/', 'See Demo'],
   },
   {
-    title: 'Project name goes here',
-    img: './images/Rectangle 26.svg',
-    tech: ['HTML/CSS', 'Ruby on Rails', 'Java'],
+    title: 'Leaderboard',
+    img: './images/leaderboard.png',
+    imgAlt: 'First img',
+    tech: ['HTML/CSS', 'JavaScript', 'Bootstrap'],
     des: [
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.',
-      ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+      'Leaderboard List is a JavaScript project for the Leaderboard list app, using webpack and ES6 features, notably modules.'
     ],
-    git: ['#', 'See Github'],
-    demo: ['#', 'See Demo'],
+    git: ['https://github.com/harshitajain06/Leaderboard', 'See Github'],
+    demo: ['https://harshitajain06.github.io/Leaderboard/dist/', 'See Demo'],
   },
   {
-    title: 'Project name goes here',
-    img: './images/Rectangle 21 (3).svg',
-    imgAlt: '#',
-    tech: ['HTML/CSS', 'Ruby on Rails', 'Java'],
+    title: 'Space Travelers Hub',
+    img: './images/space.png',
+    imgAlt: 'First img',
+    tech: ['HTML/CSS', 'Tailwind', 'React'],
     des: [
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi Ut aliquip ex ea commodo consequat.',
-      ' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+      'Space Travelers Hub is a React project to set up the environment and tools needed to develop a React application, using webpack and ES6 features, notably modules.'
     ],
-    git: ['#', 'See Github'],
-    demo: ['#', 'See Demo'],
+    git: ['https://github.com/harshitajain06/Space-Travelers-Hub', 'See Github'],
+    demo: ['https://spacemission-65jz.onrender.com/', 'See Demo'],
   },
 ];
 
@@ -97,7 +95,7 @@ const body = document.getElementById('popup');
 const open = document.querySelectorAll('.see-project');
 open.forEach((item) => {
   item.addEventListener('click', (e) => {
-    const popup = document.createElement('section');
+    const popup = document.createElement('section1');
     const store = e.currentTarget.dataset;
 
     const st = store.id;
@@ -130,15 +128,19 @@ open.forEach((item) => {
  </div>
     `;
     body.appendChild(popup);
+  
 
     const show = document.querySelectorAll('section');
     document.querySelector('#popupBtnCross').addEventListener('click', () => {
       show.forEach((i) => i.classList.toggle('show'));
     });
+    show.forEach((i) => i.classList.toggle('active'));
 
     const close = document.getElementById('popupBtnCross');
     close.addEventListener('click', () => {
+      
       body.removeChild(popup);
+      
     });
   });
 });
